@@ -1,0 +1,47 @@
+@import "./scss/config.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html { /* stylelint-disable-line */
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-size: 16px;
+  word-break: break-word;
+
+  // TODO fleiri grunn stillingar
+}
+
+// Litapalletta fyrir vef er #000000, #ffffff, #afb281, #cee8ff, #fcffd2 og #cc9694.
+
+main {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+h1 {
+  font-family: Oswald, Verdana, serif;
+}
+
+h2 {
+  font-family: Oswald, Verdana, serif;
+}
+
+img {
+  width: 20%;
+  height: 20%;
+}
+
+
+// TODO sækja allar sass skrár
+// @import "./scss/*.scss";
