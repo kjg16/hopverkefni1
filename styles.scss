@@ -11,7 +11,8 @@
   box-sizing: inherit;
 }
 
-html { /* stylelint-disable-line */
+html {
+  /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
 
@@ -31,10 +32,21 @@ main {
 
 h1 {
   font-family: Oswald, Verdana, serif;
+  font-size: 3em;
+  font-stretch: extra-condensed;
+  margin: 20px auto;
 }
 
 h2 {
   font-family: Oswald, Verdana, serif;
+  font-size: 2em;
+  margin: 20px auto;
+}
+
+h3 {
+  font-family: Oswald, Verdana, serif;
+  font-stretch: extra-condensed;
+  margin: 20px auto;
 }
 
 img {
@@ -42,6 +54,83 @@ img {
   height: 20%;
 }
 
+nav {
+  align-content: center;
+}
+
+//
+// Header
+//
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #afb281;
+}
+
+.head__menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.head__tags {
+  margin-top: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  list-style: none;
+}
+
+.head__tag {
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+//
+// Footer
+//
+
+.footer {
+  display: flex;
+  background-color: #cc9694;
+}
+
+.footer__content {
+  width: 25%;
+}
+
+.footer__list {
+  color: #fff
+}
+
+.footer__tags {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.footer__tag {
+  margin: 10px;
+}
 
 // TODO sækja allar sass skrár
 // @import "./scss/*.scss";
+
+
+//
+// Home page
+//
+
+.home {}
+
+.home__content {}
+
+.home__text {}
+
+.home__button {}
+
+.home__img {}
