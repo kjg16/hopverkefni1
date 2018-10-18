@@ -31,21 +31,24 @@ main {
 
 h1 {
   font-family: Oswald, Verdana, serif;
-  font-size: 3em;
-  font-stretch: extra-condensed;
+  font-size: 2.5em;
+  letter-spacing: -2px;
+  transform: scaleY(1.5);
   margin: 20px auto;
 }
 
 h2 {
   font-family: Oswald, Verdana, serif;
-  font-size: 2em;
+  font-size: 1.5em;
+  letter-spacing: -1px;
+  transform: scaleY(1.5);
   margin: 20px 0;
 }
 
 h3 {
   font-family: Oswald, Verdana, serif;
   font-stretch: extra-condensed;
-  margin: 20px auto;
+  margin-top: 35px;
 }
 
 img {
@@ -56,6 +59,7 @@ img {
 nav {
   align-content: center;
   margin: 0 auto;
+  padding-left: 100px;
 }
 
 //
@@ -70,9 +74,12 @@ header {
 
 .head__menu {
   display: flex;
+  width: 100%;
   max-width: 1200px;
   justify-content: center;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .head__tags {
@@ -87,7 +94,7 @@ header {
 .head__tag {
   font-weight: bold;
   text-transform: uppercase;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .head__tag a {
@@ -96,13 +103,18 @@ header {
 }
 
 .head__chart {
+  margin-top: 10px;
   justify-content: end;
 }
 
-.head__chart button {
-  background-color: #afb281;
-  border: none;
+.head__chart a {
+  color: #000;
   font-size: 1em;
+  text-decoration: none;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 //
@@ -126,18 +138,18 @@ footer {
 
 .footer__list {
   color: #fcffd2;
+  margin-top: 10px;
 }
 // #afb281, #cee8ff, #fcffd2 og #cc9694.
 
 .footer__tags {
-  margin-top: 10px;
   display: flex;
   flex-direction: column;
   list-style: none;
 }
 
 .footer__tag {
-  margin: 10px 0;
+  margin-top: 10px;
 }
 
 // TODO sækja allar sass skrár
