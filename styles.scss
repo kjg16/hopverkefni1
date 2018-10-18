@@ -103,6 +103,7 @@ header {
 }
 
 .head__chart {
+  display: flex;
   margin-top: 10px;
   justify-content: end;
 }
@@ -111,6 +112,15 @@ header {
   color: #000;
   font-size: 1em;
   text-decoration: none;
+}
+
+.head__chart img {
+  max-width: 20px;
+  margin-right: 5px;
+}
+
+.head__chart a span {
+  margin-left: 2px;
 }
 
 .underline {
@@ -197,4 +207,66 @@ footer {
 
 .reverse {
   flex-flow: row-reverse;
+}
+
+
+//
+// products
+//
+
+.products {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.prod__content {
+  max-width: 300px;
+  flex-direction: column;
+  margin: 10px;
+}
+
+
+//
+// staff
+// 
+.staff {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.staff__content {
+  max-width: 300px;
+  margin: 10px;
+}
+
+// 
+// cart
+// 
+.cart {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cart__content {
+  flex-flow: row wrap;
+  margin: 10px;
+}
+
+.cart__img {
+  display: flex;
+  width: 33.333%;
+}
+
+.cart__text {
+  display: flex;
+}
+
+.cart__price {
+  display: flex;
 }
