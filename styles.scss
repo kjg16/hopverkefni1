@@ -18,7 +18,6 @@ html {
 
   font-family: 'Open Sans', helvetica, arial, sans-serif;
   font-size: 16px;
-  word-break: break-word;
 
   // TODO fleiri grunn stillingar
 }
@@ -47,7 +46,6 @@ h2 {
 
 h3 {
   font-family: Oswald, Verdana, serif;
-  font-stretch: extra-condensed;
   margin-top: 35px;
 }
 
@@ -127,91 +125,8 @@ header {
   text-decoration: underline;
 }
 
-//
-// Footer
-//
-
-footer {
-  display: flex;
-  max-width: 1200px;
-  background-color: #cc9694;
-  align-content: center;
-  margin: 0 auto;
-}
-
-.footer__row {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
-.footer__col {
-  display: flex;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-@media (min-width: 500px) {
-
-  .footer__row {
-    flex-flow: row wrap;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-
-  .footer__col {
-    width: 50%;
-  }
-}
-
-
-@media (min-width: 1000px) {
-
-  .footer__col {
-    width: 25%;
-  }
-
-}
-
-@media (min-width: 1490px) {
-
-  .footer__row {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-}
-
-
-
-.footer__content {
-  display: flex;
-  margin: 0 auto;
-  flex-direction: column;
-}
-
-.footer__list {
-  color: #fcffd2;
-  margin-top: 10px;
-}
-
-// #afb281, #cee8ff, #fcffd2 og #cc9694.
-
-.footer__tags {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-}
-
-.footer__tag {
-  margin-top: 10px;
-}
-
 // TODO sækja allar sass skrár
-// @import "./scss/*.scss";
-
+@import "./scss/footer.scss";
 
 //
 // Home page
@@ -219,8 +134,8 @@ footer {
 
 .home {
   display: flex;
-  max-width: 1200px;
-  margin: 20px auto;
+  max-width: 1220px;
+  margin: 10px auto;
 }
 
 .home__content {
@@ -228,6 +143,7 @@ footer {
   flex-flow: column;
   justify-content: center;
   width: 50%;
+  margin: 10px;
 }
 
 .home__text {
@@ -249,70 +165,78 @@ footer {
 .home__img {
   display: flex;
   width: 50%;
-  margin: 20px 0;
+  margin: 20px 10px;
 }
 
 .reverse {
   flex-flow: row-reverse;
 }
 
-
 //
 // products
 //
 
-.products {
+.products__row {
   display: flex;
   flex-flow: row wrap;
-  max-width: 1200px;
+  max-width: 1220px;
   margin: 0 auto;
 }
 
-.prod__content {
-  max-width: 300px;
-  flex-direction: column;
-  margin: 10px;
+.prod__col {
+  width: 406.6667px;
+  padding: 10px;
 }
-
 
 //
 // staff
 // 
-.staff {
+
+.staff__row {
   display: flex;
   flex-flow: row wrap;
-  max-width: 1200px;
+  max-width: 1220px;
   margin: 0 auto;
 }
 
-.staff__content {
-  max-width: 300px;
+.staff__col {
+  width: 580px;
   margin: 10px;
 }
 
 // 
 // cart
 // 
-.cart {
+.cart__row {
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
+  max-width: 1220px;
   margin: 0 auto;
 }
 
-.cart__content {
+.cart__infoRow {
+  display: flex;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.cart__col {
   flex-flow: row wrap;
+  width: 406px;
+  margin: 10px;
+}
+
+.cart__box {
+  flex-flow: column;
   margin: 10px;
 }
 
 .cart__img {
   display: flex;
-  width: 33.333%;
 }
 
-.cart__description {
+.cart__content {
   display: flex;
-  width: 50%;
 }
 
 .cart__text {
