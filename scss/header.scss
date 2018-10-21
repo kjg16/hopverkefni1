@@ -1,0 +1,64 @@
+
+//
+// Header
+//
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: $header_color;
+  }
+  
+  .head__menu {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .head__tags {
+    display: flex;
+    margin-top: 10px;
+    list-style: none;
+  }
+  
+  .head__tag {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 20px;
+  }
+  
+  .head__tag a {
+    color:$black_color;
+    text-decoration: none;
+  }
+  
+  .head__chart {
+    display: flex;
+    margin-top: 10px;
+    justify-content: end;
+  }
+  
+  .head__chart a {
+    color:$black_color;
+    font-size: 1em;
+    text-decoration: none;
+  }
+  
+  .head__chart img {
+    flex-grow: 0;
+    max-width: 20px;
+    margin-right: 5px;
+  }
+  
+  .head__chart a span {
+    margin-left: 2px;
+  }
+  
+  .underline {
+    text-decoration: underline;
+  }
+  

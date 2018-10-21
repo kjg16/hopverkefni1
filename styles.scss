@@ -60,117 +60,13 @@ nav {
   padding-left: 100px;
 }
 
-//
-// Header
-//
-
-header {
-  display: flex;
-  flex-direction: column;
-  background-color: #afb281;
-}
-
-.head__menu {
-  display: flex;
-  width: 100%;
-  max-width: 1200px;
-  justify-content: center;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.head__tags {
-  margin-top: 10px;
-
-  display: flex;
-  flex-wrap: wrap;
-
-  list-style: none;
-}
-
-.head__tag {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-right: 20px;
-}
-
-.head__tag a {
-  color: #000;
-  text-decoration: none;
-}
-
-.head__chart {
-  display: flex;
-  margin-top: 10px;
-  justify-content: end;
-}
-
-.head__chart a {
-  color: #000;
-  font-size: 1em;
-  text-decoration: none;
-}
-
-.head__chart img {
-  max-width: 20px;
-  margin-right: 5px;
-}
-
-.head__chart a span {
-  margin-left: 2px;
-}
-
-.underline {
-  text-decoration: underline;
-}
 
 // TODO sækja allar sass skrár
+@import "./scss/header.scss";
 @import "./scss/footer.scss";
+@import "./scss/home.scss";
+@import "./scss/cart.scss";
 
-//
-// Home page
-//
-
-.home {
-  display: flex;
-  max-width: 1220px;
-  margin: 10px auto;
-}
-
-.home__content {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  width: 50%;
-  margin: 10px;
-}
-
-.home__text {
-  font-size: 1.2em;
-}
-
-.home__button {
-  margin: 20px 0;
-}
-
-.home__button button {
-  width: 250px;
-  height: 40px;
-  background-color: #cc9694;
-  border: none;
-  border-radius: 5px;
-}
-
-.home__img {
-  display: flex;
-  width: 50%;
-  margin: 20px 10px;
-}
-
-.reverse {
-  flex-flow: row-reverse;
-}
 
 //
 // products
@@ -200,49 +96,13 @@ header {
 }
 
 .staff__col {
-  width: 580px;
-  margin: 10px;
+  padding: 15px;
 }
 
-// 
-// cart
-// 
-.cart__row {
-  display: flex;
-  flex-direction: column;
-  max-width: 1220px;
-  margin: 0 auto;
+@media (min-width: 500px) {
+
+  .staff__col {
+    width: 50%;
+  }
 }
 
-.cart__infoRow {
-  display: flex;
-  max-width: 1220px;
-  margin: 0 auto;
-}
-
-.cart__col {
-  flex-flow: row wrap;
-  width: 406px;
-  margin: 10px;
-}
-
-.cart__box {
-  flex-flow: column;
-  margin: 10px;
-}
-
-.cart__img {
-  display: flex;
-}
-
-.cart__content {
-  display: flex;
-}
-
-.cart__text {
-  display: flex;
-}
-
-.cart__price {
-  display: flex;
-}

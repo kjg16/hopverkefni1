@@ -1,0 +1,57 @@
+//
+// Home page
+//
+
+.home__row {
+    display: flex;
+    flex-direction: column;
+    max-width: 1220px;
+    margin: 10px auto;
+  }
+  
+  .home__col {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 100%;
+    margin: 10px;
+  }
+  
+  .home__text {
+    font-size: 1.2em;
+    margin: 20px 0;
+  }
+  
+  .home__button {
+    margin: 20px 0;
+  }
+  
+  .home__button button {
+    width: 250px;
+    height: 40px;
+    background-color: $button_color;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .reverse {
+    flex-flow: column;
+  }
+  
+  @media (min-width: 700px) {
+  
+    .home__row {
+      flex-direction: row;
+    }
+  
+    .home__col {
+      width: 50%;
+    }
+  
+    .reverse {
+      flex-flow: row-reverse;
+    }
+  
+  }
+  
+  

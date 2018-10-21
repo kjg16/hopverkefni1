@@ -4,7 +4,7 @@
 
 footer {
   display: flex;
-  background-color: #cc9694;
+  background-color: $footer_color;
 }
 
 .footer {
@@ -67,7 +67,7 @@ footer {
 }
 
 .footer__list {
-  color: #fcffd2;
+  color: $footerList_color;
   margin-top: 10px;
 }
 
