@@ -1,0 +1,17 @@
+.staff__row {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+  
+  .staff__col {
+    padding: 15px;
+  }
+  
+  @media (min-width: 500px) {
+  
+    .staff__col {
+      width: 50%;
+    }
+  }
