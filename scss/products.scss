@@ -1,3 +1,5 @@
+@import "./scss/config.scss";
+
 .products__row {
   display: flex;
   flex-flow: row wrap;
@@ -16,4 +18,5 @@
   @media (min-width: 1000px) {
     width: 33.3333%;
   }
+  
 }

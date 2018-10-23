@@ -1,10 +1,12 @@
+@import "./scss/config.scss";
+
 //
 // Footer
 //
 
 footer {
   display: flex;
-  background-color: #cc9694;
+  background-color:$footer_color;
 }
 
 .footer__row {
@@ -62,11 +64,11 @@ footer {
 }
 
 .footer__list {
-  color: #fcffd2;
+  color: $footerList_color;
   margin-top: 10px;
 }
-.footer__lista:hover {
-  color: #000000;
+.footer__list a:hover {
+  color:$black_color;
   transition: color 300ms ease;
   width:100%;
 }
@@ -82,7 +84,7 @@ footer {
 }
 
 .footer__tag a {
-  color: #fcffd2;
+  color:$footerList_color;
   text-decoration: none;
 
 }

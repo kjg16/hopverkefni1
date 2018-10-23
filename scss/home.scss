@@ -1,3 +1,4 @@
+@import "./scss/config.scss";
 //
 // Home page
 //
@@ -30,15 +31,16 @@
   width: 100%;
   padding: 10px 5px;
   margin: 20px 0;
-  color: solid #000000;
+  color: $black_color;
   text-align: center;
   cursor: pointer;
-  background-color: #cc9694;
+  background-color: $button_color;
   transition: background-color 300ms ease, color 300ms ease; }
   
 .home__button button:hover {
-    color: #cc9694;
-    background-color: #000000; }
+    color: $button_color;
+    background-color:$black_color; 
+  }
 
 
 .reverse {
