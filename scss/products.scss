@@ -1,0 +1,11 @@
+.products__row {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.prod__col {
+  width: 406.6667px;
+  padding: 10px;
+}
