@@ -54,6 +54,12 @@ width:100%;
   text-decoration: none;
 }
 
+.head__chart span:hover {
+  color: #cee8ff;
+  transition: color 300ms ease;
+  width:100%;
+}
+
 .head__chart img {
   max-width: 20px;
   margin-right: 5px;
