@@ -3,11 +3,10 @@
     display: flex;
     flex-flow: row wrap;
     max-width: 1200px;
-    margin: 10px;
+    margin: 0 auto;
   }
 
   &__col {
-    
     width: 100%;
     padding: 10px;
 
@@ -17,6 +16,7 @@
   }
 
   &__img {
+    width: 100%;
     //Bæta við hover property + transition
   }
 

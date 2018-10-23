@@ -55,6 +55,10 @@ img {
 nav {
   align-content: center;
   margin: 0 auto;
+
+  @media (min-width: 500px) {
+    padding-left: 100px;
+  }
 }
 
 // TODO sækja allar sass skrár
