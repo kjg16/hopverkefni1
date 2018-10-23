@@ -5,7 +5,7 @@
 header {
   display: flex;
   flex-direction: column;
-  background-color: $header_color;
+  background-color: #afb281;
 }
 
 .head__menu {
@@ -32,8 +32,14 @@ header {
 }
 
 .head__tag a {
-  color: $black_color;
+  color: #000000;
   text-decoration: none;
+}
+
+.head__tags a:hover {
+color: #cee8ff;
+transition: color 300ms ease;
+width:100%;
 }
 
 .head__chart {
@@ -43,7 +49,7 @@ header {
 }
 
 .head__chart a {
-  color: $black_color;
+  color: #000000;
   font-size: 1em;
   text-decoration: none;
 }
