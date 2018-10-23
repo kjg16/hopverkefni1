@@ -4,7 +4,7 @@
 
 footer {
   display: flex;
-  background-color: $footer_color;
+  background-color: #cc9694;
 }
 
 .footer__row {
@@ -62,8 +62,13 @@ footer {
 }
 
 .footer__list {
-  color: $footerList_color;
+  color: #fcffd2;
   margin-top: 10px;
+}
+.footer__lista:hover {
+  color: #000000;
+  transition: color 300ms ease;
+  width:100%;
 }
 
 .footer__tags {
@@ -77,6 +82,7 @@ footer {
 }
 
 .footer__tag a {
-  color: $footerList_color;
+  color: #fcffd2;
   text-decoration: none;
+
 }
