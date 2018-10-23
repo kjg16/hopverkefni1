@@ -9,9 +9,9 @@ footer {
 
 .footer__row {
   display: flex;
-  flex-direction: column;
   width: 100%;
   margin: 20px auto;
+  flex-direction: column;
 }
 
 .footer__col {
@@ -20,7 +20,6 @@ footer {
 }
 
 @media (min-width: 500px) {
-
   .footer__row {
     flex-flow: row wrap;
   }
@@ -30,9 +29,7 @@ footer {
   }
 }
 
-
 @media (min-width: 1000px) {
-
   .footer {
     display: flex;
     width: 100%;
@@ -49,7 +46,6 @@ footer {
 }
 
 @media (min-width: 1490px) {
-
   .footer__row {
     padding-right: 0;
     padding-left: 0;
@@ -62,14 +58,14 @@ footer {
 }
 
 .footer__list {
-  color: $footerList_color;
   margin-top: 10px;
+  color: $footerList_color;
 }
 
 .footer__tags {
   display: flex;
-  flex-direction: column;
   list-style: none;
+  flex-direction: column;
 }
 
 .footer__tag {

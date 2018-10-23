@@ -16,7 +16,7 @@ html {
   box-sizing: border-box;
   overflow-x: hidden;
 
-  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-family: "Open Sans", helvetica, arial, sans-serif;
   font-size: 16px;
 
   // TODO fleiri grunn stillingar
@@ -27,24 +27,24 @@ main {
 }
 
 h1 {
+  margin: 20px auto;
   font-family: Oswald, Verdana, serif;
   font-size: 2.5em;
   letter-spacing: -2px;
   transform: scaleY(1.5);
-  margin: 20px auto;
 }
 
 h2 {
+  margin: 20px 0;
   font-family: Oswald, Verdana, serif;
   font-size: 1.5em;
   letter-spacing: -1px;
   transform: scaleY(1.5);
-  margin: 20px 0;
 }
 
 h3 {
-  font-family: Oswald, Verdana, serif;
   margin-top: 15px;
+  font-family: Oswald, Verdana, serif;
 }
 
 img {
@@ -57,7 +57,6 @@ nav {
   margin: 0 auto;
 }
 
-
 // TODO sækja allar sass skrár
 @import "./scss/header.scss";
 @import "./scss/footer.scss";
@@ -65,5 +64,3 @@ nav {
 @import "./scss/cart.scss";
 @import "./scss/staff.scss";
 @import "./scss/products.scss";
-
-

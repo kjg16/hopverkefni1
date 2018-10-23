@@ -14,32 +14,32 @@ header {
   width: 100%;
   max-width: 1200px;
   justify-content: center;
+  margin-right: auto;
   margin-bottom: 20px;
   margin-left: auto;
-  margin-right: auto;
 }
 
 .head__tags {
   display: flex;
-  list-style: none;
   margin-top: 10px;
+  list-style: none;
 }
 
 .head__tag {
+  margin-right: 20px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-right: 20px;
 }
 
 .head__tag a {
-  color: #000000;
+  color: #000;
   text-decoration: none;
 }
 
 .head__tags a:hover {
-color: #cee8ff;
-transition: color 300ms ease;
-width:100%;
+  width: 100%;
+  color: #cee8ff;
+  transition: color 300ms ease;
 }
 
 .head__chart {
@@ -49,15 +49,15 @@ width:100%;
 }
 
 .head__chart a {
-  color: #000000;
   font-size: 1em;
+  color: #000;
   text-decoration: none;
 }
 
 .head__chart span:hover {
+  width: 100%;
   color: #cee8ff;
-  transition: color 300ms ease;
-  width:100%;
+  transition: color 300ms ease-in-out;
 }
 
 .head__chart img {
