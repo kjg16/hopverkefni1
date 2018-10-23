@@ -1,15 +1,22 @@
-.staff__row {
+.staff {
+  &__row {
     display: flex;
     flex-flow: row wrap;
-    max-width: 1220px;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: 10px;
   }
-  
-  .staff__col {
-    padding: 15px;
+
+  &__col {
+    
+    width: 100%;
+    padding: 10px;
 
     @media (min-width: 500px) {
-        width: 50%;
+      width: 50%;
     }
   }
-  
+
+  &__image {
+    width: 100%;
+  }
+}
