@@ -5,7 +5,7 @@
 header {
   display: flex;
   flex-direction: column;
-  background-color: $header_color;
+  background-color: #afb281;
 }
 
 .head__menu {
@@ -14,30 +14,32 @@ header {
   width: 100%;
   max-width: 1200px;
   justify-content: center;
+  margin-right: auto;
   margin-bottom: 20px;
   margin-left: auto;
-  margin-right: auto;
 }
 
 .head__tags {
   display: flex;
-  list-style: none;
   margin-top: 10px;
+  list-style: none;
 }
 
 .head__tag {
+  margin-right: 20px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-right: 20px;
+}
 
-  a {
-    color: $black_color;
-    text-decoration: none;
-  }
+.head__tag a {
+  color: #000;
+  text-decoration: none;
+}
 
-  a:hover {
-    color: $hover_color;
-  }
+.head__tags a:hover {
+  width: 100%;
+  color: #cee8ff;
+  transition: color 300ms ease;
 }
 
 .head__chart {
@@ -45,32 +47,22 @@ header {
   justify-content: end;
   margin-top: 10px;
 
-  a {
-    color: $black_color;
-    font-size: 1em;
-    text-decoration: none;
+.head__chart a {
+  font-size: 1em;
+  color: #000;
+  text-decoration: none;
+}
 
-    span:hover {
-      color: $hover_color;
-    }
+.head__chart span:hover {
+  width: 100%;
+  color: #cee8ff;
+  transition: color 300ms ease-in-out;
+}
 
-    img:hover {
-      color: $hover_color
-    }
-  }
-
-  a:hover {
-    color: $hover_color;
-  }
-
-  img {
-    max-width: 20px;
-    margin-right: 5px;
-  }
-
-  img:hover {
-    color: $hover_color;
-  }
+.head__chart img {
+  max-width: 20px;
+  margin-right: 5px;
+}
 
   a span {
     margin-left: 2px;

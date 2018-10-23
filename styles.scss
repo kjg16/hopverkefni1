@@ -16,7 +16,7 @@ html {
   box-sizing: border-box;
   overflow-x: hidden;
 
-  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-family: "Open Sans", helvetica, arial, sans-serif;
   font-size: 16px;
 
   // TODO fleiri grunn stillingar
@@ -27,24 +27,24 @@ main {
 }
 
 h1 {
+  margin: 20px auto;
   font-family: Oswald, Verdana, serif;
   font-size: 2.5em;
   letter-spacing: -2px;
   transform: scaleY(1.5);
-  margin: 20px auto;
 }
 
 h2 {
+  margin: 20px 0;
   font-family: Oswald, Verdana, serif;
   font-size: 1.5em;
   letter-spacing: -1px;
   transform: scaleY(1.5);
-  margin: 20px 0;
 }
 
 h3 {
-  font-family: Oswald, Verdana, serif;
   margin-top: 15px;
+  font-family: Oswald, Verdana, serif;
 }
 
 img {
@@ -57,84 +57,10 @@ nav {
   margin: 0 auto;
 }
 
-@keyframes pulsate {
-  0% {
-    transform: scale(1, 1);
-    opacity: 0.5;
-  }
-  50% {
-    transform: scale(1.5, 1.5);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(2, 2);
-    opacity: 0;
-  }
-}
-
-button:active {
-  margin: auto;
-  animation: pulsate 0.2s ease-in-out;
-  animation-iteration-count: 1;
-  opacity: 0;
-  border: 1px solid $black_color;
-  border-radius: 50%;
-  height: 100%;
-  width: 100%;
-}
-
-a:active {
-  margin: auto;
-  animation: pulsate 0.2s ease-in;
-  animation-iteration-count: 1;
-  opacity: 0;
-  border: 1px solid $black_color;
-  border-radius: 50%;
-  height: 100%;
-  width: 100%;
-}
-
 // TODO sækja allar sass skrár
 @import "./scss/header.scss";
 @import "./scss/footer.scss";
 @import "./scss/home.scss";
 @import "./scss/cart.scss";
-
-
-//
-// products
-//
-
-.products__row {
-  display: flex;
-  flex-flow: row wrap;
-  max-width: 1220px;
-  margin: 0 auto;
-}
-
-.prod__col {
-  width: 406.6667px;
-  padding: 10px;
-}
-
-//
-// staff
-// 
-
-.staff__row {
-  display: flex;
-  flex-flow: row wrap;
-  max-width: 1220px;
-  margin: 0 auto;
-}
-
-.staff__col {
-  padding: 15px;
-}
-
-@media (min-width: 500px) {
-
-  .staff__col {
-    width: 50%;
-  }
-}
+@import "./scss/staff.scss";
+@import "./scss/products.scss";
