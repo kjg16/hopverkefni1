@@ -36,23 +36,6 @@
   align-content: center;
 }
 
-.cart__img {
-  display: flex;
-}
-
-.cart__content {
-  display: flex;
-  flex-direction: column;
-}
-
-.cart__text {
-  display: flex;
-}
-
-.cart__price {
-  display: flex;
-}
-
 @media (min-width: 700px) {
 
   .cart__row {
@@ -70,4 +53,22 @@
   .cart__col2 {
     width: 66.66666667%;
   }
+}
+
+
+.cart__img {
+  display: flex;
+}
+
+.cart__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart__text {
+  display: flex;
+}
+
+.cart__price {
+  display: flex;
 }

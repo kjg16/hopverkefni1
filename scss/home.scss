@@ -17,23 +17,6 @@
   margin: 10px;
 }
 
-.home__text {
-  font-size: 1.2em;
-  margin: 20px 0;
-}
-
-.home__button {
-  margin: 20px 0;
-}
-
-.home__button button {
-  width: 250px;
-  height: 40px;
-  border: none;
-  border-radius: 5px;
-  background-color: $button_color;
-}
-
 .reverse {
   flex-flow: column;
 }
@@ -52,4 +35,22 @@
     flex-flow: row-reverse;
   }
 
+}
+
+
+.home__text {
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+.home__button {
+  margin: 20px 0;
+
+  button {
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: $button_color;
+  }
 }

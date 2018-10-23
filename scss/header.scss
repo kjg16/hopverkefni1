@@ -29,32 +29,52 @@ header {
   font-weight: bold;
   text-transform: uppercase;
   margin-right: 20px;
-}
 
-.head__tag a {
-  color: $black_color;
-  text-decoration: none;
+  a {
+    color: $black_color;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $hover_color;
+  }
 }
 
 .head__chart {
   display: flex;
   justify-content: end;
   margin-top: 10px;
-}
 
-.head__chart a {
-  color: $black_color;
-  font-size: 1em;
-  text-decoration: none;
-}
+  a {
+    color: $black_color;
+    font-size: 1em;
+    text-decoration: none;
 
-.head__chart img {
-  max-width: 20px;
-  margin-right: 5px;
-}
+    span:hover {
+      color: $hover_color;
+    }
 
-.head__chart a span {
-  margin-left: 2px;
+    img:hover {
+      color: $hover_color
+    }
+  }
+
+  a:hover {
+    color: $hover_color;
+  }
+
+  img {
+    max-width: 20px;
+    margin-right: 5px;
+  }
+
+  img:hover {
+    color: $hover_color;
+  }
+
+  a span {
+    margin-left: 2px;
+  }
 }
 
 .underline {
