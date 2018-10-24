@@ -31,21 +31,15 @@
     font-size: 1.2em;
   }
 
-
-  &__text {
-    font-size: 1.2em;
-    margin: 20px 0;
-  }
-
   &__button {
     margin: 20px 0;
 
     button {
       width: 250px;
       height: 40px;
-      border: none;
-      border-radius: 5px;
       background-color: $button_color;
+      border: transparent;
+      border-radius: 5px;
     }
   }
 }
