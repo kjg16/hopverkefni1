@@ -63,6 +63,18 @@ footer {
   flex-direction: column;
 }
 
+
+
+
+ @media (min-width: 1200px) {
+  .footer__text {
+  margin: auto;
+  font-size:0.750em;
+  font-family: Verdana;
+  margin-top:40px;
+  margin-bottom:20px;
+   } }
+
 .footer__list {
   color: $footerList_color;
   margin-top: 10px;
