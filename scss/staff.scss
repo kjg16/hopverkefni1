@@ -3,9 +3,9 @@
     display: flex;
     flex-flow: row wrap;
     max-width: 1200px;
-    margin: 0 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin: 0 10px;
   }
 
   &__col {
@@ -66,6 +66,6 @@
 }
 
 .staff__back.center {
-  text-align: center;
   margin-top: 50%;
+  text-align: center;
 }
