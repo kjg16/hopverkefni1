@@ -3,14 +3,16 @@
     display: flex;
     flex-flow: row wrap;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   &__col {
     width: 100%;
     padding: 10px;
 
-    @media (min-width: 500px) {
+    @media (min-width: 700px) {
       width: 50%;
     }
 
@@ -61,4 +63,9 @@
     display: block;
     transform: rotateY(180deg);
   }
+}
+
+.staff__back.center {
+  text-align: center;
+  margin-top: 50%;
 }
