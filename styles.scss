@@ -27,24 +27,24 @@ main {
 }
 
 h1 {
+  margin: 20px auto;
   font-family: Oswald, Verdana, serif;
   font-size: 2.5em;
   letter-spacing: -2px;
   transform: scaleY(1.5);
-  margin: 20px auto;
 }
 
 h2 {
+  margin: 20px 0;
   font-family: Oswald, Verdana, serif;
   font-size: 1.5em;
   letter-spacing: -1px;
   transform: scaleY(1.5);
-  margin: 20px 0;
 }
 
 h3 {
-  font-family: Oswald, Verdana, serif;
   margin-top: 15px;
+  font-family: Oswald, Verdana, serif;
 }
 
 img {
@@ -55,8 +55,11 @@ img {
 nav {
   align-content: center;
   margin: 0 auto;
-}
 
+  @media (min-width: 500px) {
+    padding-left: 100px;
+  }
+}
 
 // TODO sækja allar sass skrár
 @import "./scss/header.scss";
@@ -65,5 +68,3 @@ nav {
 @import "./scss/cart.scss";
 @import "./scss/staff.scss";
 @import "./scss/products.scss";
-
-

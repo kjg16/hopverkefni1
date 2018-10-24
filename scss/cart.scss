@@ -1,14 +1,13 @@
-@import "./scss/config.scss";
-// 
+//
 // cart
-// 
+//
 
 .cart__row {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   max-width: 1220px;
   margin: 0 auto;
+  flex-direction: column;
 }
 
 .cart__col {
@@ -25,16 +24,34 @@
 
 .cart__infos {
   display: flex;
-  flex-direction: column;
   max-width: 1220px;
   margin: 0 auto;
+  flex-direction: column;
 }
 
 .cart__info {
-  flex-direction: column;
   width: 50%;
   margin: 10px;
+  flex-direction: column;
   align-content: center;
+}
+
+@media (min-width: 700px) {
+  .cart__row {
+    flex-direction: row;
+  }
+
+  .cart__infos {
+    flex-direction: row;
+  }
+
+  .cart__col1 {
+    width: 33.33333333%;
+  }
+
+  .cart__col2 {
+    width: 66.66666667%;
+  }
 }
 
 .cart__img {
@@ -52,23 +69,4 @@
 
 .cart__price {
   display: flex;
-}
-
-@media (min-width: 700px) {
-
-  .cart__row {
-    flex-direction: row;
-  }
-
-  .cart__infos {
-    flex-direction: row;
-  }
-
-  .cart__col1 {
-    width: 33.33333333%;
-  }
-
-  .cart__col2 {
-    width: 66.66666667%;
-  }
 }

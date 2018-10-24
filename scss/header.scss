@@ -7,76 +7,72 @@
 header {
   display: flex;
   flex-direction: column;
-  background-color:$header_color;
+  background-color: $header_color;
 }
 
-.head__menu {
-  display: flex;
-  flex-flow: row wrap;
-  width: 100%;
-  max-width: 1200px;
-  justify-content: center;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
+.head {
+  &__menu {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+  }
 
-.head__tags {
-  display: flex;
-  list-style: none;
-  margin-top: 10px;
-}
+  &__tags {
+    display: flex;
+    margin-top: 10px;
+    list-style: none;
 
-.head__tag {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-right: 20px;
-}
+    a:hover {
+      width: 100%;
+      color: $hover_color;
+      transition: color 300ms ease;
+    }
+  }
 
-.head__tag a {
-  color:$black_color;
-  text-decoration: none;
-}
+  &__tag {
+    margin-right: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
 
-.head__tags a:hover {
-color: $lightBlue_color;
-transition: color 300ms ease;
-width:100%;
-}
+    a {
+      color: $black_color;
+      text-decoration: none;
+    }
+  }
 
-.head__chart {
-  display: flex;
-  justify-content: end;
-  margin-top: 10px;
-}
+  &__chart {
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
 
-.head__chart a {
-  color:$black_color;
-  font-size: 1em;
-  text-decoration: none;
-}
+    a {
+      font-size: 1em;
+      color: $black_color;
+      text-decoration: none;
+    }
 
-.head__chart span:hover {
-  color: $lightBlue_color;
-  transition: color 300ms ease;
-  width:100%;
-}
+    span:hover {
+      width: 100%;
+      color: $hover_color;
+      transition: color 300ms ease-in-out;
+    }
 
-.head__chart img {
-  max-width: 20px;
-  margin-right: 5px;
-}
+    img {
+      max-width: 20px;
+      margin-right: 5px;
+    }
 
-.head__chart a span {
-  margin-left: 2px;
+    a span {
+      margin-left: 2px;
+    }
+  }
 }
 
 .underline {
   text-decoration: underline;
-}
-
-@media (min-width: 500px) {
-  nav {
-    padding-left: 100px;
-  }
 }

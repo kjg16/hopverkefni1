@@ -6,94 +6,68 @@
 
 footer {
   display: flex;
-  background-color:$footer_color;
-}
-
-.footer__row {
-  display: flex;
   flex-direction: column;
-  width: 100%;
-  margin: 20px auto;
+  background-color: $footer_color;
 }
 
-.footer__col {
-  display: flex;
-  padding-left: 10px;
-}
-
-@media (min-width: 500px) {
-
-  .footer__row {
-    flex-flow: row wrap;
-  }
-
-  .footer__col {
-    width: 50%;
-  }
-}
-
-
-@media (min-width: 1000px) {
-
-  .footer {
+.footer {
+  &__row {
     display: flex;
     width: 100%;
+    margin: 20px auto;
+    flex-direction: column;
+
+    @media (min-width: 500px) {
+      flex-flow: row wrap;
+    }
+
+    @media (min-width: 1000px) {
+      max-width: 1220px;
+    }
   }
 
-  .footer__row {
-    max-width: 1220px;
+  &__col {
+    display: flex;
+    padding-left: 10px;
+
+    @media (min-width: 500px) {
+      width: 50%;
+    }
+
+    @media (min-width: 1000px) {
+      width: 25%;
+    }
   }
 
-  .footer__col {
-    width: 25%;
+  &__content {
+    flex-direction: column;
   }
 
-}
-
-@media (min-width: 1490px) {
-
-  .footer__row {
-    padding-right: 0;
-    padding-left: 0;
+  &__list {
+    margin-top: 10px;
   }
 
-}
+  &__tags {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+  }
 
-.footer__content {
-  flex-direction: column;
-}
+  &__tag {
+    margin-top: 10px;
 
- @media (min-width: 1200px) {
-  .footer__text {
-  margin: auto;
-  font-size:0.750em;
-  font-family: Verdana;
-  margin-top:40px;
-  margin-bottom:20px;
-   } }
+    a {
+      color: $footerList_color;
+      text-decoration: none;
+    }
 
-.footer__list {
-  color: $footerList_color;
-  margin-top: 10px;
-}
-.footer__list a:hover {
-  color:$black_color;
-  transition: color 300ms ease;
-  width:100%;
-}
+    a:hover {
+      color: $black_color;
+      transition: color 300ms ease;
+    }
+  }
 
-.footer__tags {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-}
-
-.footer__tag {
-  margin-top: 10px;
-}
-
-.footer__tag a {
-  color:$footerList_color;
-  text-decoration: none;
-
+  &__copy {
+    margin: 0 auto;
+  }
 }

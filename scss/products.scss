@@ -1,22 +1,27 @@
-@import "./scss/config.scss";
-
-.products__row {
-  display: flex;
-  flex-flow: row wrap;
-  max-width: 1220px;
-  margin: 10px;
-}
-
-.prod__col {
-  width: 100%;
-  padding: 10px;
-
-  @media (min-width: 550px) {
-    width: 50%;
+.prod {
+  &__row {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 10px;
   }
 
-  @media (min-width: 1000px) {
-    width: 33.3333%;
+  &__col {
+    width: 100%;
+    padding: 10px;
+
+    @media (min-width: 600px) {
+      width: 50%;
+    }
+
+    @media (min-width: 1000px) {
+      width: 33.3333%;
+    }
   }
-  
+
+  &__text {
+    min-height: 50px;
+  }
 }
