@@ -50,21 +50,6 @@
 
 @media (min-width: 700px) {
 
-  button {
-    width: 250px;
-    height: 40px;
-    border: none;
-    border-radius: 5px;
-    background-color: $button_color;
-  }
-
-  button:hover {
-    color: $button_color;
-    background-color: $black_color;
-    transition: color 300ms ease;
-    transition: background-color 300ms ease;
-  }
-
   .home__row {
     flex-direction: row;
   }
