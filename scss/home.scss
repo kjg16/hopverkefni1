@@ -1,66 +1,80 @@
+@import "./scss/config.scss";
 //
 // Home page
 //
 
-.home {
-  &__row {
-    display: flex;
-    max-width: 1220px;
-    margin: 10px auto;
-    flex-direction: column;
+.home__row {
+  display: flex;
+  flex-direction: column;
+  max-width: 1220px;
+  margin: 10px auto;
+}
 
-    @media (min-width: 700px) {
-      flex-direction: row;
-    }
-  }
+.home__col {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  justify-content: center;
+  margin: 10px;
+}
 
-  &__col {
-    display: flex;
-    flex-flow: column;
-    width: 100%;
-    justify-content: center;
-    margin: 10px;
+.home__text {
+  font-size: 1.2em;
+  margin: 20px 0;
+}
 
-    @media (min-width: 700px) {
-      width: 50%;
-    }
-  }
+.home__button button {
+  max-width: 250px;
+  font-size: 0.750em;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px 5px;
+  margin: 20px 0;
+  color: $black_color;
+  text-align: center;
+  cursor: pointer;
+  background-color: $button_color;
+  transition: background-color 300ms ease, color 300ms ease;
+}
 
-  &__text {
-    margin: 20px 0;
-    font-size: 1.2em;
-  }
-
-
-  &__text {
-    font-size: 1.2em;
-    margin: 20px 0;
-  }
-
-  &__button {
-    margin: 20px 0;
-
-    button {
-      width: 250px;
-      height: 40px;
-      border: none;
-      border-radius: 5px;
-      background-color: $button_color;
-    }
-
-    button:hover {
-      color: $button_color;
-      background-color: $black_color;
-      transition: color 300ms ease;
-      transition: background-color 300ms ease;
-    }
-  }
+.home__button button:hover {
+  color: $button_color;
+  background-color: $black_color;
 }
 
 .reverse {
   flex-flow: column;
+}
 
-  @media (min-width: 700px) {
+@media (min-width: 700px) {
+
+  button {
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: $button_color;
+  }
+
+  button:hover {
+    color: $button_color;
+    background-color: $black_color;
+    transition: color 300ms ease;
+    transition: background-color 300ms ease;
+  }
+
+  .home__row {
+    flex-direction: row;
+  }
+
+  .home__col {
+    width: 50%;
+  }
+
+  .reverse {
     flex-flow: row-reverse;
   }
+
 }

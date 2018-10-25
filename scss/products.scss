@@ -3,6 +3,8 @@
     display: flex;
     flex-flow: row wrap;
     max-width: 1220px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin: 0 auto;
   }
 
@@ -20,6 +22,6 @@
   }
 
   &__text {
-    min-height: 50px;
+    min-height: 90px;
   }
 }

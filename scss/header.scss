@@ -1,3 +1,5 @@
+@import "./scss/config.scss";
+
 //
 // Header
 //
@@ -25,7 +27,7 @@ header {
     margin-top: 10px;
     list-style: none;
 
-    & a:hover {
+    a:hover {
       width: 100%;
       color: $hover_color;
       transition: color 300ms ease;
@@ -37,7 +39,7 @@ header {
     font-weight: bold;
     text-transform: uppercase;
 
-    & a {
+    a {
       color: $black_color;
       text-decoration: none;
     }
@@ -45,27 +47,28 @@ header {
 
   &__chart {
     display: flex;
+    max-height: 10px;
     justify-content: end;
     margin-top: 10px;
 
-    & a {
+    a {
       font-size: 1em;
       color: $black_color;
       text-decoration: none;
     }
 
-    & span:hover {
+    span:hover {
       width: 100%;
       color: $hover_color;
       transition: color 300ms ease-in-out;
     }
 
-    & img {
+    img {
       max-width: 20px;
       margin-right: 5px;
     }
 
-    & a span {
+    a span {
       margin-left: 2px;
     }
   }
