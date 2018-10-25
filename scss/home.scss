@@ -34,7 +34,7 @@
   &__button {
     margin: 20px 0;
 
-    button {
+    button { /* stylelint-disable-line */
       width: 250px;
       height: 40px;
       background-color: $button_color;

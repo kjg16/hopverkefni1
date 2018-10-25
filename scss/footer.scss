@@ -2,7 +2,7 @@
 // Footer
 //
 
-footer {
+footer { /* stylelint-disable-line */
   display: flex;
   flex-direction: column;
   background-color: $footer_color;
@@ -54,12 +54,12 @@ footer {
   &__tag {
     margin-top: 10px;
 
-    a {
+    a { /* stylelint-disable-line */
       color: $footerList_color;
       text-decoration: none;
     }
 
-    a:hover {
+    a:hover { /* stylelint-disable-line */
       color: $hover_color;
       transition: color 300ms ease;
     }
