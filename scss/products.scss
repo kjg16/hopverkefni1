@@ -24,4 +24,45 @@
   &__text {
     min-height: 90px;
   }
+
+  &__button {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin-top: 21px;
+    margin-left: 20px;
+
+    button {
+      display: flex;
+      flex-flow: row nowrap;
+      width: 120px;
+      height: 30px;
+      background: none;
+      border: 1px solid $black_color;
+
+      span {
+        display: flex;
+        height: 100%;
+        width: 20%;
+        background: url(../img/cart.svg) no-repeat;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__meta {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1;
+  
+    label {
+      display: flex;
+      flex-flow: column;
+    }
+  
+    input {
+      width: 205px;
+      height: 30px;
+    }
+  }  
 }
