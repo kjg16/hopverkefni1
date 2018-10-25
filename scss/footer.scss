@@ -4,7 +4,7 @@
 // Footer
 //
 
-footer {
+footer { /* stylelint-disable-line */
   display: flex;
   flex-direction: column;
   background-color: $footer_color;
@@ -56,13 +56,14 @@ footer {
   &__tag {
     margin-top: 10px;
 
-    a {
+    a { /* stylelint-disable-line */
       color: $footerList_color;
       text-decoration: none;
     }
 
-    a:hover {
-      color: $black_color;
+    a:hover { /* stylelint-disable-line */
+      color: $black_color; 
+      /* Þetta á að vera svart samkvæmt sýnilausnar video.*/
       transition: color 300ms ease;
     }
   }

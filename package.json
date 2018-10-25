@@ -11,10 +11,11 @@
     "sass-watch": "node-sass --source-map-embed --watch styles.scss --recursive styles.css"
   },
   "dependencies": {
-    "browser-sync": "^2.26.3",
     "node-sass": "^4.9.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.3"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kjg16/hopverkefni1.git"

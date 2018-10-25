@@ -4,7 +4,7 @@
 // Header
 //
 
-header {
+header { /* stylelint-disable-line */
   display: flex;
   flex-direction: column;
   background-color: $header_color;
@@ -27,7 +27,7 @@ header {
     margin-top: 10px;
     list-style: none;
 
-    a:hover {
+    a:hover { /* stylelint-disable-line */
       width: 100%;
       color: $hover_color;
       transition: color 300ms ease;
@@ -39,7 +39,7 @@ header {
     font-weight: bold;
     text-transform: uppercase;
 
-    a {
+    a { /* stylelint-disable-line */
       color: $black_color;
       text-decoration: none;
     }
@@ -50,24 +50,24 @@ header {
     justify-content: end;
     margin-top: 10px;
 
-    a {
+    a { /* stylelint-disable-line */
       font-size: 1em;
       color: $black_color;
       text-decoration: none;
     }
 
-    span:hover {
+    span:hover { /* stylelint-disable-line */
       width: 100%;
       color: $hover_color;
       transition: color 300ms ease-in-out;
     }
 
-    img {
+    img { /* stylelint-disable-line */
       max-width: 20px;
       margin-right: 5px;
     }
 
-    a span {
+    a span { /* stylelint-disable-line */
       margin-left: 2px;
     }
   }

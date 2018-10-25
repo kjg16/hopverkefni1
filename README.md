@@ -1,6 +1,38 @@
 
 # Hópverkefni 1
 
+Verkefnið hér er vefur sem skrifaður hefur verið eftir forskrift.
+
+## Keyrsla verkefnis
+
+Til að byrja með þarf að ná í verkefnið.
+
+Ef búið er að ná í verkefnið þarf að keyra skipunina `npm install` til að ná í þá pakka sem nauðsynlegir eru fyrir keyrslu verkefnisins. Í þessu tilfelli er náð í node-sass þýðanda sem þýðir úr `sass` yfir í `css`. Til að þýða sass skránna er skipunin `node-sass styles.scss styles.css` keyrð.
+
+Eftir það er hægt að opna index.html í vafra og keyra allar síður verkefnisins.
+
+## Uppsetning og skipulag verkefnis
+
+Forsíða verkefnisins er í skjalinu `index.html`. Allar aðrar síður eru geymdar í möppunni pages.
+
+Sérhver af HTML síðunum vísar í sama stylesheet, `styles.css`, sem þýtt hefur verið úr `styles.scss` með node-sass.
+
+Allar HTML síður eiga sína eigin sass skrá, þær eru geymdar í möppunni scss. `styles.scss` vísar svo í allar þessar skrár. Þetta gerir skipulag kóðans auðveldara.
+
+Haus og fótur eiga sínar eigin sass skrár, þar sem haus og fótur eru eins uppsett á öllum síðum, `styles.scss` vísar einnig í þær.
+
+Allar myndir sem eru notaðar í verkefninu eru geymdar í möppunni img.
+
+## Þeir sem unnu verkefnið
+
+Karl Jóhann kjg16@hi.is
+
+Hinrik htv2@hi.is
+
+Urður Gunnsteinsdóttir urg3@hi.is - Tölvunarfræðinemi
+
+# Hópverkefni 1
+
 Verkefnið felst í því að smíða vef eftir forskrift.
 
 Gefnar eru [fyrirmyndir](utlit/) í `500px`, `800px` og `1500px` með grind ásamt `1500px` án grindar og yfirliti yfir virkni vefs í `utlit/video.mp4`.
