@@ -38,10 +38,12 @@
   background-color: $button_color;
   transition: background-color 300ms ease, color 300ms ease;
 }
-
-.home__button button:hover {
-  color: $button_color;
+.home__button button:hover { /* stylelint-disable-line */
   background-color: $black_color;
+  color: $button_color;
+  border: transparent;
+  border-radius: 5px;
+  transition: background-color 300ms ease, color 300ms ease;
 }
 
 .reverse {
