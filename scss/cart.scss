@@ -77,7 +77,8 @@
 .cart__button {
   display: flex;
   flex-flow: row wrap;
-  margin-top: 20px;
+  margin-top: 23px;
+  margin-left: 10px;
 
   button {
     display: flex;
@@ -86,15 +87,20 @@
     height: 30px;
     background: none;
     border: 1px solid $black_color;
-    margin: 4px;
+    border-radius: 3px;
 
     span {
       display: flex;
       height: 100%;
       width: 20%;
-      background: url(../img/cart.svg) no-repeat;
+      background: url(./img/cart.svg) no-repeat;
       margin-left: 10px;
     }
+  }
+
+  button:hover {
+    background-color: $button_color;
+    transition: background-color 300ms ease, color 300ms ease;
   }
 }
 
@@ -110,6 +116,5 @@
   input {
     width: 80px;
     height: 30px;
-    margin: 4px;
   }
 }
