@@ -1,27 +1,87 @@
+@import "./scss/config.scss";
+
 .prod {
   &__row {
     display: flex;
     flex-flow: row wrap;
-    max-width: 1200px;
+    max-width: 1220px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom:10px;
     margin: 0 auto;
+  }
+
+  &__title {
+  font-size:28px;
   }
 
   &__col {
     width: 100%;
     padding: 10px;
 
-    @media (min-width: 600px) {
+    @media (min-width: 800px) {
       width: 50%;
     }
-
     @media (min-width: 1000px) {
       width: 33.3333%;
     }
   }
 
+  &__price {
+    padding-bottom:10px;
+  }
+
   &__text {
     min-height: 50px;
+    font-size: 1em;
   }
+
+  &__fieldset {
+    border-style:none;
+    margin-bottom: 20px;
+  }
+
+  &__button { 
+    display:inline-flex;
+    max-width:100px;
+    width:100px;
+    padding: 5px;
+    background-color: solid white; 
+    border:1px solid black;
+    border-radius: 3px; 
+  }
+
+    &__button:hover { 
+      background-color: $button_color;
+      color: $black_color;
+      border:transparent;
+      border-radius: 3px;
+      transition: background-color 300ms ease, color 300ms ease;
+    
+    }
+
+  &__buttontext {
+    padding-left:6px;
+  }
+
+  &__button img {
+    max-height:18px;
+    max-width:14px;
+
+  }
+
+  &__fieldset input { 
+  border: 1px solid black;
+  max-width:250px;
+  width:250px;
+  padding:5px;
+  border-radius: 3px;
+ }
+/*
+  &__input {
+
+
+  }
+  */
+  
+ 
 }
