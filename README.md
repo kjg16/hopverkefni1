@@ -29,7 +29,7 @@ Allar myndir sem eru notaðar í verkefninu eru geymdar í möppunni img.
 
 Karl Jóhann Guðsteinsson kjg16@hi.is - Tölvunarfræðinemi
 
-Hinrik htv2@hi.is
+Hinrik htv2@hi.is - Tölvunarfræðinemi
 
 Urður Gunnsteinsdóttir urg3@hi.is - Tölvunarfræðinemi
 
