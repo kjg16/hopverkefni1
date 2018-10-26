@@ -70,6 +70,10 @@ input:active {
   @include pulse();
 }
 
+select:active {
+  @include pulse();
+}
+
 // sækja sértækar skilgreiningar fyrir síðurnar
 
 @import "./scss/header.scss";
