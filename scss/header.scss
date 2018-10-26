@@ -47,6 +47,8 @@ header { /* stylelint-disable-line */
 
   &__chart {
     display: flex;
+    max-height: 15px;
+    max-width: 90px;
     justify-content: end;
     margin-top: 10px;
 

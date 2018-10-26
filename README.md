@@ -13,19 +13,21 @@ Eftir það er hægt að opna index.html í vafra og keyra allar síður verkefn
 
 ## Uppsetning og skipulag verkefnis
 
-Forsíða verkefnisins er í skjalinu `index.html`. Allar aðrar síður eru geymdar í möppunni pages.
+Forsíða verkefnisins er í skjalinu `index.html`. Allar aðrar síður eru `cart.html`, `products.html` og  `staff.html` sem er geymdar í möppunni pages.
 
-Sérhver af HTML síðunum vísar í sama stylesheet, `styles.css`, sem þýtt hefur verið úr `styles.scss` með node-sass.
+Allar síðurnar vísar í sama stylesheet, `styles.css`, sem þýtt hefur verið úr `styles.scss` með node-sass.
 
-Allar HTML síður eiga sína eigin sass skrá, þær eru geymdar í möppunni scss. `styles.scss` vísar svo í allar þessar skrár. Þetta gerir skipulag kóðans auðveldara.
+Sérhverlar HTML síða á sína eigin sass skrá, þær eru geymdar í möppunni scss ásamt sér skrám fyrir header, footer og config. `styles.scss` vísar svo í allar þessar skrár. Þetta gerir skipulag kóðans auðveldara.
 
-Haus og fótur eiga sínar eigin sass skrár, þar sem haus og fótur eru eins uppsett á öllum síðum, `styles.scss` vísar einnig í þær.
+Haus og fótur eiga sínar eigin sass skrár `header.scss` og `footer.scss`, þar sem haus og fótur eru eins uppsett á öllum síðum, `styles.scss` vísar einnig í þær.
+
+Nokkrar sameiginlegar stillingar svo sem litir eru skilgreind í `config.scss` skránni.
 
 Allar myndir sem eru notaðar í verkefninu eru geymdar í möppunni img.
 
 ## Þeir sem unnu verkefnið
 
-Karl Jóhann kjg16@hi.is
+Karl Jóhann Guðsteinsson kjg16@hi.is - Tölvunarfræðinemi
 
 Hinrik htv2@hi.is
 

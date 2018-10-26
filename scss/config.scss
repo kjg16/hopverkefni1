@@ -10,3 +10,25 @@ $footer_color: #cc9694;
 $footerList_color: #fcffd2;
 $button_color: #cc9694;
 $hover_color: #cee8ff;
+
+@mixin pulse() {
+  animation: pulsate 300ms ease-in;
+  animation-iteration-count: 1;
+  opacity: 1;
+  box-shadow: 0 0 50px $black_color;
+  border-radius: 50%;
+}
+
+@keyframes pulsate {
+  0% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
