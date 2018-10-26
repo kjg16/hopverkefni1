@@ -21,24 +21,22 @@ html { /* stylelint-disable-line */
   // TODO fleiri grunn stillingar
 }
 
-main { /* stylelint-disable-line */
-  margin: 0 10px;
+@media(max-width: 1250px) {
+  section {
+    margin: 0 10px;
+  }
 }
 
 h1 { /* stylelint-disable-line */
   margin: 20px auto;
   font-family: Oswald, Verdana, serif;
-  font-size: 2.5em;
-  letter-spacing: -2px;
-  transform: scaleY(1.5);
+  font-size: 3em;
 }
 
 h2 { /* stylelint-disable-line */
-  margin: 20px 0;
+  margin: 10px 0;
   font-family: Oswald, Verdana, serif;
-  font-size: 1.5em;
-  letter-spacing: -1px;
-  transform: scaleY(1.5);
+  font-size: 2em;
 }
 
 h3 { /* stylelint-disable-line */
@@ -60,7 +58,20 @@ nav {
   }
 }
 
-// TODO sækja allar sass skrár
+a:active {
+  @include pulse();
+}
+
+button:active {
+  @include pulse();
+}
+
+input:active {
+  @include pulse();
+}
+
+// sækja sértækar skilgreiningar fyrir síðurnar
+
 @import "./scss/header.scss";
 @import "./scss/footer.scss";
 @import "./scss/home.scss";

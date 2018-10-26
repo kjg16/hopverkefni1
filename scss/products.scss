@@ -2,7 +2,7 @@
   &__row {
     display: flex;
     flex-flow: row wrap;
-    max-width: 1200px;
+    max-width: 1220px;
     padding-top: 20px;
     padding-bottom: 20px;
     margin: 0 auto;
@@ -12,16 +12,71 @@
     width: 100%;
     padding: 10px;
 
-    @media (min-width: 600px) {
+    @media (min-width: 800px) {
       width: 50%;
     }
 
-    @media (min-width: 1000px) {
+    @media (min-width: 1200px) {
       width: 33.3333%;
     }
   }
 
   &__text {
-    min-height: 50px;
+    min-height: 90px;
+  }
+
+  &__button {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 10px;
+    margin-left: 0;
+
+    @media(min-width: 390px) {
+      margin-top: 21px;
+      margin-left: 20px;
+    }
+
+    button {
+      display: flex;
+      flex-flow: row nowrap;
+      width: 120px;
+      height: 30px;
+      background: none;
+      border: 1px solid $black_color;
+      border-radius: 3px;
+
+      span {
+        display: flex;
+        height: 100%;
+        width: 20%;
+        background: url(./img/cart.svg) no-repeat;
+        margin-left: 10px;
+      }
+    }
+
+    button:hover {
+      background-color: $button_color;
+      transition: background-color 300ms ease, color 300ms ease;
+    }
+  }
+
+  &__meta {
+    display: flex;
+    flex-flow: row wrap;
+
+    @media(min-width: 1200px) {
+      flex-wrap: nowrap;
+      margin: 0;
+    }
+
+    label {
+      display: flex;
+      flex-flow: column;
+    }
+
+    input {
+      width: 205px;
+      height: 30px;
+    }
   }
 }

@@ -26,9 +26,7 @@
         </nav>
         <div class="head__chart">
           <a href="./cart.html"><img src="../img/cart.svg"></a>
-          <a href="./cart.html">
-            <span>Karfa(3)</span>
-          </a>
+          <a href="./cart.html"><span>Karfa(3)</span></a>
         </div>
       </div>
     </header>
@@ -60,10 +58,10 @@
                 <input type="number">
               </label>
               <div class="cart__button">
-                <button>Uppfæra</button>
+                <button><span>&nbsp;</span>Uppfæra</button>
               </div>
               <div class="cart__button">
-                <button>Eyða úr körfu</button>
+                <button><span>&nbsp;</span>Eyða úr körfu</button>
               </div>
             </div>
           </div>
@@ -80,7 +78,7 @@
               <p>Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnartólum.
                 Höfum við minnst á að þau eru hágæða?</p>
             </div>
-            <div>
+            <div class="cart__price">
               <h3>39.999 kr.-</h3>
             </div>
             <div class="cart__sala">
@@ -89,34 +87,34 @@
                 <input type="number">
               </label>
               <div class="cart__button">
-                <button>Uppfæra</button>
+                <button><span>&nbsp;</span>Uppfæra</button>
               </div>
               <div class="cart__button">
-                <button>Eyða úr körfu</button>
+                <button><span>&nbsp;</span>Eyða úr körfu</button>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="cart__infos">
-        <div class="cart__info">
+        <div class="cart__info offset">
           <h2>Sendingarupplýsingar</h2>
           <div class="cart__fields">
-            <div class="cart__name">
+            <div class="cart__field">
               <label>
-                Nafn:
+                <span>Nafn:</span>
                 <input type="text">
               </label>
             </div>
-            <div class="cart__address">
+            <div class="cart__field">
               <label>
-                Heimilisfang:
+                <span>Heimilisfang:</span>
                 <input type="text">
               </label>
             </div>
-            <div class="cart__postno">
+            <div class="cart__field">
               <label>
-                Póstnúmer:
+                <span>Póstnúmer:</span>
                 <select class="cart__pno">
                   <option value="">-Velja póstnúmer--</option>
                   <option value="101">101</option>
@@ -133,54 +131,62 @@
         <div class="cart__info">
           <h2>Greiðsluupplýsingar</h2>
           <div class="cart__fields">
-            <div class="cart__card">
+            <div class="cart__field">
               <label>
-                Kortanúmer:
+                <span>Kortanúmer:</span>
                 <input type="number">
               </label>
             </div>
-            <div class="cart__cardname">
+            <div class="cart__field">
               <label>
-                Korthafi:
+                <span>Korthafi:</span>
                 <input type="text">
               </label>
             </div>
             <div class="cart__valid">
-              <div class="cart__date">
-                <div class="cart__month">
-                  <label>
-                    Mán.
-                    <select class="cart__select">
-                      <option value="01">01</option>
-                      <option value="02">02</option>
-                      <option value="03">03</option>
-                      <option value="04">03</option>
-                      <option value="05">05</option>
-                      <option value="06">06</option>
-                      <option value="07">07</option>
-                      <option value="08">08</option>
-                      <option value="09">09</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
-                    </select>
-                  </label>
+              <label>
+                <span>Gildistími:</span>
+                <div class="cart__date">
+                  <div class="cart__month">
+                    <label>
+                      Mán.
+                      <select class="cart__select">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">03</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                      </select>
+                    </label>
+                  </div>
+                  <div class="cart__year">
+                    <label>
+                      Ár
+                      <select class="cart__select">
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                      </select>
+                    </label>
+                  </div>
                 </div>
-                <div class="cart__year">
-                  <label>
-                    Ár
-                    <select class="cart__select">
-                      <option value="2018">2018</option>
-                      <option value="2019">2019</option>
-                      <option value="2020">2020</option>
-                      <option value="2021">2021</option>
-                      <option value="2022">2022</option>
-                    </select>
-                  </label>
-                </div>
-              </div>
+              </label>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="cart__row">
+        <div class="cart__buy">
+          <button>kaupa</button>
         </div>
       </div>
     </section>

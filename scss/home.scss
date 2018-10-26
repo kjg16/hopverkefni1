@@ -1,5 +1,4 @@
 @import "./scss/config.scss";
-
 //
 // Home page
 //
@@ -7,9 +6,9 @@
 .home {
   &__row {
     display: flex;
+    flex-direction: column;
     max-width: 1220px;
     margin: 10px auto;
-    flex-direction: column;
 
     @media (min-width: 700px) {
       flex-direction: row;
@@ -29,27 +28,33 @@
   }
 
   &__text {
-    margin: 20px 0;
     font-size: 1.2em;
+    margin: 20px 0;
   }
 
-  &__button {
+  &__button button {
+    max-width: 250px;
+    font-size: 0.750em;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 5px;
     margin: 20px 0;
+    color: $black_color;
+    text-align: center;
+    cursor: pointer;
+    background-color: $button_color;
+    transition: background-color 300ms ease, color 300ms ease;
+  }
 
-    button { /* stylelint-disable-line */
-      width: 250px;
-      height: 40px;
-      background-color: $button_color;
-      border: transparent;
-      border-radius: 5px;
-    }
-    button:hover { /* stylelint-disable-line */
-      background-color: $black_color;
-      color: $button_color;
-      border: transparent;
-      border-radius: 5px;
-      transition: background-color 300ms ease, color 300ms ease;
-    }
+  &__button button:hover {
+    /* stylelint-disable-line */
+    background-color: $black_color;
+    color: $button_color;
+    border: transparent;
+    border-radius: 5px;
+    transition: background-color 300ms ease, color 300ms ease;
   }
 }
 
@@ -57,6 +62,6 @@
   flex-flow: column;
 
   @media (min-width: 700px) {
-    flex-flow: row-reverse;
+      flex-flow: row-reverse;
   }
 }
