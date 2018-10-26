@@ -47,10 +47,12 @@
   }
 
   &__info {
-    width: 50%;
-    margin: 10px;
     flex-direction: column;
-    align-content: center;
+    margin-top: 10px;
+
+    @media (max-width: 1000px) {
+      margin: 0 auto;
+    }
   }
 
   &__img {
@@ -76,7 +78,7 @@
   &__button {
     display: flex;
     flex-flow: row wrap;
-    margin-top: 23px;
+    margin-top: 21px;
     margin-left: 10px;
 
     button {
@@ -114,7 +116,107 @@
 
     input {
       width: 80px;
-      height: 30px;
+      min-height: 30px;
     }
+  }
+
+  &__fields {
+    display: flex;
+    flex-flow: column;
+    width: 405px;
+    justify-content: flex-end;
+
+    label {
+      display: flex;
+      flex-wrap: nowrap;
+
+      input {
+        width: 240px;
+        height: 30px;
+        border: 1px solid;
+        border-radius: 3px;
+      }
+    }
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 10px 0;
+
+    span {
+      width: 147px;
+    }
+
+    select {
+      height: 30px;
+      border-radius: 5px;
+      width: 240px
+    }
+  }
+
+  &__valid {
+    display: flex;
+    flex-flow: column;
+    width: 410px;
+    justify-content: flex-end;
+
+    label {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    span {
+      width: 150px;
+    }
+  }
+
+  &__date {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 60%;
+
+    select {
+      height: 30px;
+      border-radius: 3px;
+      margin-left: 30px;
+      margin-right: 10px;
+    }
+  }
+
+  &__buy {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+    button {
+      font-size: 1em;
+      height: 40px;
+      border: none;
+      border-radius: 5px;
+      width: 250px;
+      cursor: pointer;
+      background-color: $button_color;
+      transition: background-color 300ms ease, color 300ms ease;
+    }
+
+    button:hover {
+      /* stylelint-disable-line */
+      background-color: $black_color;
+      color: $button_color;
+      border: transparent;
+      border-radius: 5px;
+      transition: background-color 300ms ease, color 300ms ease;
+    }
+  }
+}
+
+.offset {
+  @media(min-width: 1000px) {
+    margin-left: 17.5%;
+    margin-right: 0;
   }
 }

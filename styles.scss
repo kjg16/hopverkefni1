@@ -34,7 +34,7 @@ h1 { /* stylelint-disable-line */
 }
 
 h2 { /* stylelint-disable-line */
-  margin: 20px 0;
+  margin: 10px 0;
   font-family: Oswald, Verdana, serif;
   font-size: 2em;
 }
@@ -59,33 +59,18 @@ nav {
 }
 
 a:active {
-  animation: pulsate 300ms ease-in;
-  animation-iteration-count: 1;
-  opacity: 1;
-  box-shadow: 0 0 50px $black_color;
-  border-radius: 50%;
+  @include pulse();
 }
 
 button:active {
-  animation: pulsate 300ms ease-in;
-  animation-iteration-count: 1;
-  opacity: 1;
-  box-shadow: 0 0 100px $black_color;
+  @include pulse();
 }
 
-@keyframes pulsate {
-  0% {
-    opacity: 1;
-  }
-
-  60% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
+input:active {
+  @include pulse();
 }
+
+// sækja sértækar skilgreiningar fyrir síðurnar
 
 @import "./scss/header.scss";
 @import "./scss/footer.scss";

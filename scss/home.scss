@@ -62,8 +62,6 @@
   flex-flow: column;
 
   @media (min-width: 700px) {
-    .reverse {
       flex-flow: row-reverse;
-    }
   }
 }

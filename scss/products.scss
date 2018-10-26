@@ -12,11 +12,11 @@
     width: 100%;
     padding: 10px;
 
-    @media (min-width: 600px) {
+    @media (min-width: 800px) {
       width: 50%;
     }
 
-    @media (min-width: 1000px) {
+    @media (min-width: 1200px) {
       width: 33.3333%;
     }
   }
@@ -28,9 +28,13 @@
   &__button {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-end;
-    margin-top: 21px;
-    margin-left: 20px;
+    margin-top: 10px;
+    margin-left: 0;
+
+    @media(min-width: 390px) {
+      margin-top: 21px;
+      margin-left: 20px;
+    }
 
     button {
       display: flex;
@@ -58,7 +62,12 @@
 
   &__meta {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
+
+    @media(min-width: 1200px) {
+      flex-wrap: nowrap;
+      margin: 0;
+    }
 
     label {
       display: flex;
