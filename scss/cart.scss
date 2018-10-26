@@ -87,7 +87,7 @@
       background: none;
       border: 1px solid $black_color;
       border-radius: 3px;
-
+      
       span {
         display: flex;
         height: 100%;
@@ -118,3 +118,8 @@
     }
   }
 }
+
+.cart__price {
+  display: flex;
+}
+
