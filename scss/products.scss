@@ -63,6 +63,7 @@
   &__meta {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
 
     @media(min-width: 1200px) {
       flex-wrap: nowrap;
