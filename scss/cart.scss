@@ -1,5 +1,7 @@
+@import "./scss/config.scss";
+
 //
-// cart
+// Cart
 //
 
 .cart {
@@ -89,6 +91,7 @@
       background: none;
       border: 1px solid $black_color;
       border-radius: 3px;
+      cursor: pointer;
       
       span {
         display: flex;

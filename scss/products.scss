@@ -1,3 +1,9 @@
+@import "./scss/config.scss";
+
+//
+// Products
+//
+
 .prod {
   &__row {
     display: flex;
@@ -44,6 +50,7 @@
       background: none;
       border: 1px solid $black_color;
       border-radius: 3px;
+      cursor: pointer;
 
       span {
         display: flex;
